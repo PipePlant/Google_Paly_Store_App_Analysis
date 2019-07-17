@@ -190,7 +190,7 @@ for x,y in ftops_rate_review:
     x_list = [x] * len(y)
     ax3.scatter(x_list,y)
 plt.xticks(fontsize=12)
-plt.title('回复量分布')
+plt.title('评论量分布')
 
 plt.subplots_adjust(wspace=0.5)
 ```
@@ -225,7 +225,7 @@ plt.subplots_adjust(wspace=0.5)
 - 本次选取了安装量最多的前200个免费App。
 - 首先分析App评分，介于之前分析过安装量与评分的关系，这里的结论也符合之前，下载量最多的App评分稳定和离散点较少。
 - 其次是在这些最受欢的App中，家庭分类的App最多，旅游和本地类的其次，排第三的是照片处理App。
-- 在回复量与评分的关系中，评分高的App的回复数量偏少，只有少数App能有极高的回复量和高评分，这也说明，这些App才是质量和市场上的领军者。
+- 在评论量与评分的关系中，评分高的App的评论数量偏少，只有少数App能有极高的评论量和高评分，这也说明，这些App才是质量和市场上的领军者。
 
 
 ```python
@@ -265,7 +265,7 @@ for x,y in ptops_rate_review:
     x_list = [x] * len(y)
     ax4.scatter(x_list,y)
 ax4.set_ylim(0,500000)
-plt.title('回复量分布')
+plt.title('评论量分布')
 
 plt.xticks(fontsize=12)
 ```
@@ -301,7 +301,7 @@ plt.xticks(fontsize=12)
 
 
 
-![png](./images/output_11_2.png)
+![png](./images/images/output_11_2.png)
 
 
 ## 付费软件分析
@@ -310,4 +310,4 @@ plt.xticks(fontsize=12)
 - 同前面免费软件一样，App评分依然是保持着稳定和较少的离散点。
 - 针对付费App，这里分析了价格分布，所取200款App的平均价格是\\$12.3,绝大多数App售价都在平均线下，只有几款App售价会高达\\$400这一档次；结合这次所选的是最受欢迎的前200个App，可见，高额的价格不会影响优质App的销售。
 - 其次是在这些最受欢的App中，分类分布交平均，主体还是以工具类、商务类和生活类的为主。
-- 在回复量与评分的关系中，回复数量类似正态分布，大多数高回复量的App评分趋于中段；与免费App一样也是，当回复量到一定阶段，提高评分也是更加困难的。
+- 在评论量与评分的关系中，评论数量类似正态分布，大多数高评论量的App评分趋于中段；与免费App一样也是，当评论量到一定阶段，提高评分也是更加困难的。
